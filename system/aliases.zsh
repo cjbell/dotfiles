@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# Useful for assuming roles
+alias aws-login='function(){eval $(command assume-role -duration 7h0m0s $@);}'
